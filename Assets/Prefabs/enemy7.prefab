@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2050668273089565244}
   - component: {fileID: 3438610966760661138}
   - component: {fileID: 5740102305970440589}
+  - component: {fileID: -2979498498706459955}
   m_Layer: 0
   m_Name: enemy7
   m_TagString: Enemy
@@ -140,4 +141,26 @@ MonoBehaviour:
   scorevalue: 50
   lifePrefab: {fileID: 6737802471838054832, guid: 78856482c870034448d8f506ee1af098, type: 3}
   explosion: {fileID: 1148790167176252156, guid: 142e68fb6dc21bd4aa7d372c3636c107, type: 3}
-  ExplosionSFX: {fileID: 8300000, guid: ff15f1235a170fd448ea324333bef6c4, type: 3}
+  EnemyExplosionSFX: {fileID: 8300000, guid: ff15f1235a170fd448ea324333bef6c4, type: 3}
+  PlayerExplosionSFX: {fileID: 8300000, guid: 5df09c1161f34a64ebba4c183f2a7b26, type: 3}
+--- !u!50 &-2979498498706459955
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2180315864884207853}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

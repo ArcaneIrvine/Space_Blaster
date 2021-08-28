@@ -29,6 +29,8 @@ public class EnemyControl : MonoBehaviour
         //if enemy goes outside of the bottom screen then destroy it
         if (transform.position.y < min.y)
         {
+            //take a life away from the player
+            MainPlayer.TakeDamage();
             Destroy(gameObject);
         }
 

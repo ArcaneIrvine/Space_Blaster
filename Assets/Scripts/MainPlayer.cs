@@ -73,17 +73,16 @@ public class MainPlayer : MonoBehaviour
         }
     }
 
-    private void TakeDamage()
+    public static void TakeDamage()
     {
         currentLives--;
         UIManager.UpdateLives(currentLives);
 
         if (currentLives <= 0)
         {
-            Debug.Log("GAME OVER");
+            //open game over screen
             MenuManager.OpenGameOver();
             SaveManager.SaveProgress();
-            //GameOver
         }
     }
 
