@@ -8,7 +8,8 @@ public class EnemySpawner : MonoBehaviour
 
     float maxSpawnRateInSeconds = 3f;
 
-    bool callonce = true;
+    bool callonceA = true;
+    bool callonceB = true;
 
     // Start is called before the first frame update
     void Start()
@@ -19,14 +20,22 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (MenuManager.spawn && callonce)
+        if (MenuManager.spawn)
         {
             Invoke("SpawnEnemy", maxSpawnRateInSeconds);
 
             //increase spawn rate every 30 seconds
             InvokeRepeating("IncreaseSpawnRate", 0f, 30f);
 
-            callonce = false;
+            MenuManager.spawn = false;
+        }
+
+        else if (MenuManager.endspawn)
+        {
+            CancelInvoke("SpawnEnemy");
+            CancelInvoke("IncreaseSpawnRate");
+
+            MenuManager.endspawn = false;
         }
     }
 

@@ -6,6 +6,7 @@ public class MainPlayer : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public GameObject Explosion;
+    public static GameObject Player;
 
 
     private bool isShooting;
@@ -100,4 +101,19 @@ public class MainPlayer : MonoBehaviour
             UIManager.UpdateLives(currentLives);
         }
     }
+
+    /*transfor players position when he dies
+    public static void TeleportPlayer()
+    {
+        if (MenuManager.endgame)
+        {
+            Player.transform.position = new Vector2(8, -6);
+            MenuManager.endgame = false;
+        }
+        else
+        {
+            Player.transform.position = new Vector2(0, -6);
+        }
+    }*/
+
 }

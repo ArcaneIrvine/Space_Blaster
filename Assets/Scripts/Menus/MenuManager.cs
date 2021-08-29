@@ -12,7 +12,8 @@ public class MenuManager : MonoBehaviour
     public static MenuManager instance;
 
     public static bool spawn;
-    public static bool endspawn = false;
+    public static bool endspawn;
+    public static bool endgame;
 
     private void Awake()
     {
@@ -35,6 +36,8 @@ public class MenuManager : MonoBehaviour
 
     public static void OpenGameOver()
     {
+        endgame = true;
+
         Time.timeScale = 0;
 
         instance.gameovermenu.SetActive(true);
@@ -72,11 +75,12 @@ public class MenuManager : MonoBehaviour
     public static void ReturnToMainMenu()
     {
         endspawn = true;
+
         Time.timeScale = 1;
+
         instance.gameovermenu.SetActive(false);
         instance.pausemenu.SetActive(false);
         instance.ingamemenu.SetActive(false);
-
         instance.mainmenu.SetActive(true);
 
         GameManager.CancelGame();
