@@ -83,6 +83,8 @@ public class MainPlayer : MonoBehaviour
             //open game over screen
             MenuManager.OpenGameOver();
             SaveManager.SaveProgress();
+            //destroy all enemies
+            EnemySpawner.DestroyAllEnemies();
         }
     }
 

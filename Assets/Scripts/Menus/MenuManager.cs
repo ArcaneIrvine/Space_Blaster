@@ -11,6 +11,9 @@ public class MenuManager : MonoBehaviour
 
     public static MenuManager instance;
 
+    public static bool spawn;
+    public static bool endspawn = false;
+
     private void Awake()
     {
         if (instance == null)
@@ -42,6 +45,8 @@ public class MenuManager : MonoBehaviour
 
     public void OpenInGame()
     {
+        spawn = true;
+
         Time.timeScale = 1;
 
         instance.mainmenu.SetActive(false);
@@ -66,6 +71,7 @@ public class MenuManager : MonoBehaviour
 
     public static void ReturnToMainMenu()
     {
+        endspawn = true;
         Time.timeScale = 1;
         instance.gameovermenu.SetActive(false);
         instance.pausemenu.SetActive(false);
@@ -74,7 +80,6 @@ public class MenuManager : MonoBehaviour
         instance.mainmenu.SetActive(true);
 
         GameManager.CancelGame();
-        
     }
 
     public static void CloseWindow(GameObject go)
