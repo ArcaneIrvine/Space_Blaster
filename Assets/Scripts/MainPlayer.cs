@@ -6,7 +6,6 @@ public class MainPlayer : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public GameObject Explosion;
-    public static GameObject Player;
 
 
     private bool isShooting;
@@ -17,7 +16,7 @@ public class MainPlayer : MonoBehaviour
     private const float MAXDOWN = -7f;
 
     public float speed = 10;
-    private float cooldown = 0.2f;
+    private float cooldown = 1f;
 
     public static int currentLives = 3;
 
@@ -32,20 +31,28 @@ public class MainPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A) && transform.position.x > MAXLEFT)
-            transform.Translate(Vector2.left * Time.deltaTime * speed);
+        if(MenuManager.enablemovement)
+        {
+            if (Input.GetKey(KeyCode.A) && transform.position.x > MAXLEFT)
+                transform.Translate(Vector2.left * Time.deltaTime * speed);
 
-        if (Input.GetKey(KeyCode.W) && transform.position.y < MAXUP)
-            transform.Translate(Vector2.up * Time.deltaTime * speed);
+            if (Input.GetKey(KeyCode.W) && transform.position.y < MAXUP)
+                transform.Translate(Vector2.up * Time.deltaTime * speed);
 
-        if (Input.GetKey(KeyCode.S) && transform.position.y > MAXDOWN)
-            transform.Translate(Vector2.down * Time.deltaTime * speed);
+            if (Input.GetKey(KeyCode.S) && transform.position.y > MAXDOWN)
+                transform.Translate(Vector2.down * Time.deltaTime * speed);
 
-        if (Input.GetKey(KeyCode.D) && transform.position.x < MAXRIGHT)
-            transform.Translate(Vector2.right * Time.deltaTime * speed);
+            if (Input.GetKey(KeyCode.D) && transform.position.x < MAXRIGHT)
+                transform.Translate(Vector2.right * Time.deltaTime * speed);
 
-        if (Input.GetKey(KeyCode.Space) && !isShooting)
-            StartCoroutine(Shoot());
+            if (Input.GetKey(KeyCode.Space) && !isShooting)
+                StartCoroutine(Shoot());
+        }
+        if(MenuManager.disablemovement)
+        {
+            MenuManager.enablemovement = false;
+            MenuManager.disablemovement = false;
+        }
     }
 
     private IEnumerator Shoot()
@@ -101,19 +108,5 @@ public class MainPlayer : MonoBehaviour
             UIManager.UpdateLives(currentLives);
         }
     }
-
-    /*transfor players position when he dies
-    public static void TeleportPlayer()
-    {
-        if (MenuManager.endgame)
-        {
-            Player.transform.position = new Vector2(8, -6);
-            MenuManager.endgame = false;
-        }
-        else
-        {
-            Player.transform.position = new Vector2(0, -6);
-        }
-    }*/
 
 }

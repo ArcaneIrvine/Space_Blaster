@@ -13,7 +13,8 @@ public class MenuManager : MonoBehaviour
 
     public static bool spawn;
     public static bool endspawn;
-    public static bool endgame;
+    public static bool enablemovement;
+    public static bool disablemovement;
 
     private void Awake()
     {
@@ -36,7 +37,7 @@ public class MenuManager : MonoBehaviour
 
     public static void OpenGameOver()
     {
-        endgame = true;
+        disablemovement = true;
 
         Time.timeScale = 0;
 
@@ -48,6 +49,8 @@ public class MenuManager : MonoBehaviour
 
     public void OpenInGame()
     {
+        enablemovement = true;
+
         spawn = true;
 
         Time.timeScale = 1;

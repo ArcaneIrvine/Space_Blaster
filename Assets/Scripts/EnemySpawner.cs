@@ -8,9 +8,6 @@ public class EnemySpawner : MonoBehaviour
 
     float maxSpawnRateInSeconds = 3f;
 
-    bool callonceA = true;
-    bool callonceB = true;
-
     // Start is called before the first frame update
     void Start()
     {
