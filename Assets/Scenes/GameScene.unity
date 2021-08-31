@@ -190,6 +190,54 @@ PrefabInstance:
       propertyPath: ExplosionSFX
       value: 
       objectReference: {fileID: 8300000, guid: 5df09c1161f34a64ebba4c183f2a7b26, type: 3}
+    - target: {fileID: 8285662520287795524, guid: 8afd04b4ca983804f9a83e8a52f1e6b7, type: 3}
+      propertyPath: bulletupgrades.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285662520287795524, guid: 8afd04b4ca983804f9a83e8a52f1e6b7, type: 3}
+      propertyPath: bulletupgrades.Array.data[0]
+      value: 
+      objectReference: {fileID: 627965534682372810, guid: d777606e43771c4468370c419159bdb9, type: 3}
+    - target: {fileID: 8285662520287795524, guid: 8afd04b4ca983804f9a83e8a52f1e6b7, type: 3}
+      propertyPath: bulletupgrades.Array.data[1]
+      value: 
+      objectReference: {fileID: 4023953404222682756, guid: 96520acd918405240b9746f66421a076, type: 3}
+    - target: {fileID: 8285662520287795524, guid: 8afd04b4ca983804f9a83e8a52f1e6b7, type: 3}
+      propertyPath: bulletupgrades.Array.data[2]
+      value: 
+      objectReference: {fileID: 5059315924097298406, guid: a3d13e67a471d334184a6d932620e0db, type: 3}
+    - target: {fileID: 8285662520287795524, guid: 8afd04b4ca983804f9a83e8a52f1e6b7, type: 3}
+      propertyPath: bulletupgrades.Array.data[3]
+      value: 
+      objectReference: {fileID: 783743150405421774, guid: ade61d68480f5354787def729d32ea8b, type: 3}
+    - target: {fileID: 8285662520287795524, guid: 8afd04b4ca983804f9a83e8a52f1e6b7, type: 3}
+      propertyPath: bulletupgrades.Array.data[4]
+      value: 
+      objectReference: {fileID: 4553644158927718504, guid: 6c9ceaad83aedc04db45e1fc99c25025, type: 3}
+    - target: {fileID: 8285662520287795524, guid: 8afd04b4ca983804f9a83e8a52f1e6b7, type: 3}
+      propertyPath: bulletupgrades.Array.data[5]
+      value: 
+      objectReference: {fileID: 2658335580477588064, guid: 5ece79688a6afc44395011e10924c312, type: 3}
+    - target: {fileID: 8285662520287795524, guid: 8afd04b4ca983804f9a83e8a52f1e6b7, type: 3}
+      propertyPath: bulletupgrades.Array.data[6]
+      value: 
+      objectReference: {fileID: 6694064885019080336, guid: d0ee31d0f88efad4085ba8b8973f1030, type: 3}
+    - target: {fileID: 8285662520287795524, guid: 8afd04b4ca983804f9a83e8a52f1e6b7, type: 3}
+      propertyPath: bulletupgrades.Array.data[7]
+      value: 
+      objectReference: {fileID: 8154931754866415417, guid: 0681ff91f09f8304a808618bcad4d4be, type: 3}
+    - target: {fileID: 8285662520287795524, guid: 8afd04b4ca983804f9a83e8a52f1e6b7, type: 3}
+      propertyPath: bulletupgrades.Array.data[8]
+      value: 
+      objectReference: {fileID: 1046322610745137996, guid: f64da389c025ef14a9c039c0995cda1a, type: 3}
+    - target: {fileID: 8285662520287795524, guid: 8afd04b4ca983804f9a83e8a52f1e6b7, type: 3}
+      propertyPath: bulletupgrades.Array.data[9]
+      value: 
+      objectReference: {fileID: 7145062742833114216, guid: 55058054f4e1ef34e848d46552f290a2, type: 3}
+    - target: {fileID: 8285662520287795524, guid: 8afd04b4ca983804f9a83e8a52f1e6b7, type: 3}
+      propertyPath: bulletupgrades.Array.data[10]
+      value: 
+      objectReference: {fileID: 3286343499240373144, guid: b80f93230af8e594894fda50fc2cc5de, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8afd04b4ca983804f9a83e8a52f1e6b7, type: 3}
 --- !u!1 &169149052

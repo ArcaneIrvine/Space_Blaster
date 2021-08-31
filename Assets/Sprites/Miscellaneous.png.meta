@@ -62,6 +62,21 @@ TextureImporter:
   - first:
       213: 5322433151225624845
     second: healt
+  - first:
+      213: 7983617964722330811
+    second: explosion3_0
+  - first:
+      213: -7749276137823018104
+    second: explosion3_1
+  - first:
+      213: 1511418316676342467
+    second: explosion3_2
+  - first:
+      213: -6217023478614579506
+    second: explosion3_3
+  - first:
+      213: 7953124715195965561
+    second: weaponchange
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -197,7 +212,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 25
+        y: 24
         width: 8
         height: 8
       alignment: 0
@@ -558,7 +573,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -566,6 +581,111 @@ TextureImporter:
       bones: []
       spriteID: d09f09760c41dd940800000000000000
       internalID: 5322433151225624845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion3_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc93b96d328bce60800000000000000
+      internalID: 7983617964722330811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion3_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883e5aaf86a057490800000000000000
+      internalID: -7749276137823018104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion3_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2238083f2a9f410800000000000000
+      internalID: 1511418316676342467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion3_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec62aecd512b8b9a0800000000000000
+      internalID: -6217023478614579506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weaponchange
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970a2af7acc2f5e60800000000000000
+      internalID: 7953124715195965561
       vertices: []
       indices: 
       edges: []

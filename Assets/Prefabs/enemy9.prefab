@@ -140,6 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scorevalue: 80
   lifePrefab: {fileID: 6737802471838054832, guid: 78856482c870034448d8f506ee1af098, type: 3}
+  weaponchangeprefab: {fileID: 8443270913863930352, guid: a60098edb4866404194e4bebef45e0ed, type: 3}
   explosion: {fileID: 1148790167176252156, guid: 142e68fb6dc21bd4aa7d372c3636c107, type: 3}
   EnemyExplosionSFX: {fileID: 8300000, guid: ff15f1235a170fd448ea324333bef6c4, type: 3}
   PlayerExplosionSFX: {fileID: 8300000, guid: 5df09c1161f34a64ebba4c183f2a7b26, type: 3}

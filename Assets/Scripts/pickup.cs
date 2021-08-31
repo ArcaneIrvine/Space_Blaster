@@ -15,6 +15,7 @@ public abstract class pickup : MonoBehaviour
 
     public abstract void pickMeUp();
 
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ship"))

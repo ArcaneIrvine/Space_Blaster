@@ -5,6 +5,7 @@ using UnityEngine;
 public class MainPlayer : MonoBehaviour
 {
     public GameObject bulletPrefab;
+    public List<GameObject> bulletupgrades = new List<GameObject>();
     public GameObject Explosion;
 
 
@@ -15,7 +16,7 @@ public class MainPlayer : MonoBehaviour
     private const float MAXUP = 4.7f;
     private const float MAXDOWN = -7f;
 
-    public float speed = 10;
+    public float speed = 8;
     private float cooldown = 1f;
 
     public static int currentLives = 3;
@@ -106,6 +107,19 @@ public class MainPlayer : MonoBehaviour
         {
             currentLives++;
             UIManager.UpdateLives(currentLives);
+        }
+    }
+
+    public void ChangeBullet()
+    {
+        if(bulletupgrades.Count >= 0)
+        {
+            int v = Random.Range(0, bulletupgrades.Count);
+            bulletPrefab = bulletupgrades[v];
+            if(bulletPrefab == bulletupgrades[v])
+            {
+                UIManager.UpdateScore(500);
+            }
         }
     }
 

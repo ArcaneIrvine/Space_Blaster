@@ -15,6 +15,7 @@ ScriptsOnlyBuild:
     - MainPlayer
     - MenuManager
     - PickUpLife1
+    - PickUpWeapon1
     - SaveManager
     - UIManager
     Unity.2D.Animation.Editor.dll:
@@ -168,6 +169,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 8584}
     - Class: 114
       Script: {instanceID: 8762}
+    - Class: 114
+      Script: {instanceID: 24514}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1035,7 +1038,7 @@ ScriptsOnlyBuild:
     className: Benchmark03
   - hash:
       serializedVersion: 2
-      Hash: af258b8e0cef9680c4473701fa6d62d3
+      Hash: d87d2d2d5b28082eb3dabf7b2bdae733
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -1377,7 +1380,7 @@ ScriptsOnlyBuild:
     className: VertexZoom
   - hash:
       serializedVersion: 2
-      Hash: 94469809863631d4e3f7eabccdf5d84c
+      Hash: bffe0dc6adece0ca797696d6268a3c29
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainPlayer
@@ -1423,6 +1426,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 2f7540f2e214462ece3ce8a9edcfe9a3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PickUpWeapon1
   platform: 19
   scenePathNames:
   - Assets/Scenes/GameScene.unity
