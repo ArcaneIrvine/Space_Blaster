@@ -1,3 +1,9 @@
-*.cpp linguist-language=C++
-*.cpp linguist-detectable=false
+# Ignore Everything
+*
 
+# But not .cs
+!*.cs
+# Or directories
+!*/
+!.gitignore
+!README.md
