@@ -1,9 +1,1 @@
-# Ignore Everything
-*
 
-# But not .cs
-!*.cs
-# Or directories
-!*/
-!.gitignore
-!README.md
